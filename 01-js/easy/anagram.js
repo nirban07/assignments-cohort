@@ -5,7 +5,21 @@
 */
 
 function isAnagram(str1, str2) {
-
+  let result = false;
+  if (str1.length != str2.length) {
+    return false;
+  }
+  if (str1.length + str2.length < 1) {
+    return true;
+  }
+  for (let i in str2) {
+    if (str1.includes(str2[i])) {
+      result = true;
+    } else {
+      result = false;
+    }
+  }
+  return result;
 }
 
 module.exports = isAnagram;
