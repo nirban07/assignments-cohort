@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 // Connect to MongoDB
 mongoose.connect(
-  "mongodb+srv://admin:ENPAkoEjUctSeY42@cluster0.aryipcn.mongodb.net/"
+  "mongodb+srv://kirags123:8qPEa8KTKBEh2bss@cluster0.f3qlbuo.mongodb.net/course_selling_app2"
 );
 
 // Define schemas
@@ -28,8 +28,8 @@ const CourseSchema = new mongoose.Schema({
   // Schema definition here
   title: String,
   description: String,
-  price: Number,
   imageLink: String,
+  price: Number,
 });
 
 const Admin = mongoose.model("Admin", AdminSchema);
